@@ -47,16 +47,21 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li a:before{
-    content:'';
+nav ul li a:before {
+    content: '';
     background: var(--decoration-color);
-    position:absolute;
-    bottom:-10px; 
-    /* alto y ancho=0 */
-    /* transition: ; */
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+    height: 3px;
+    width: 0; 
+    transition: width 0.3s ease-in-out;
 }
-nav ul li a:hover::before{
-    /* ancho final */
+
+
+
+nav ul li a:hover::before {
+    width: 100%;
 }
 
 /* Barra redes */
